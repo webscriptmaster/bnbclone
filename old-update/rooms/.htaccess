@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Allow direct access to actual files and directories
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Exclude /assets directory from rewriting
+RewriteCond %{REQUEST_URI} !^/assets/
+
+# Rewrite rule for PHP files
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# If the request is for a real file or directory, don't rewrite
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Ensure CSS files are served with the correct MIME type
+AddType text/css .css
+

@@ -1,0 +1,730 @@
+body {
+    background-color: #f4f7f6;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    transition: .5s;
+    border: none;
+    margin-bottom: -5px;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    /* box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%); */
+    margin-top: -15px;
+}
+.search_items{
+    padding: 7px;
+    background: #efefef;
+}
+.custom-btn{
+    background: white;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+}
+
+.custom-btn:hover {
+    background: #efefef;
+    cursor: pointer;
+    border-color: #343a40;
+}
+.chat-app .people-list {
+    width: 343px;
+    position: absolute;
+    left: 0;
+    top: 87px;
+    padding: 20px;
+    z-index: 7;
+}
+       /* Initially hide the input */
+       #search-input input {
+        width: 0;
+        padding: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+        border: none;
+    }
+
+    /* When expanded */
+    #search-input.expanded input {
+        width: 100%; /* Adjust width as needed */
+        padding: 5px 10px;
+        opacity: 1;
+        border: 1px solid #ccc;
+    }
+    .d-flex1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    /* Hide the cancel button initially */
+    #cancel-icon {
+        display: none;
+        cursor: pointer;
+    }
+.new1{
+    position: relative;
+}
+.new2{
+    position: absolute;
+    left: 58%;
+    top: 13px;
+}
+
+    /* Input group style */
+    .input-group-prepend {
+        cursor: pointer;
+    }
+  
+    .chat-app .chat {
+        margin-left: 355px;
+        margin-top: 61px;
+        border-left: 1px solid #d7d7d7;
+    }
+.people-list {
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.people-list .chat-list li {
+    padding: 10px 15px 24px 15px;
+    list-style: none;
+    border-radius: 3px
+}
+
+.people-list .chat-list li:hover {
+    background: #efefef;
+    cursor: pointer
+}
+
+.people-list .chat-list li.active {
+    background: #efefef
+}
+
+.people-list .chat-list li .name {
+    font-size: 15px
+}
+
+.position{
+    position: relative;
+}
+.position2 {
+    position: absolute;
+    left: 63px;
+    bottom: 60px;
+}
+.newimg{
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+    border-radius: 50%;
+}
+.people-list img {
+   
+}
+
+.people-list .about {
+    text-align: justify;
+    padding-left: 102px;
+    margin-top: -44px;
+}
+.status {
+    color: gray;
+    font-size: 10px;
+}
+    /* .people-list .status {
+        color: #999;
+        font-size: 13px;
+        margin-left: 16px;
+    }
+    .online{
+        margin-left: 70px !important;
+        font-size: 11px !important;
+    } */
+    .chat .chat-header {
+        /* padding: 1px 20px; */
+        border: 1px solid #f4f7f6;
+        height: 83px;
+    }
+.cqvtwb5 {
+    display: none;
+}
+.chahht {
+    float: left;
+    border-radius: 51px;
+    width: 39px;
+    height: 40px;
+}
+.google_img {
+    min-width: 4%;
+    max-width: 11%;
+}
+.chat .chat-header .chat-about {
+    float: left;
+    width: 33%;
+    padding-left: 10px;
+}
+
+.chat .chat-history {
+    padding: 20px;
+    border-bottom: 2px solid #fff
+}
+
+.chat .chat-history ul {
+    padding: 0
+}
+
+.chat .chat-history ul li {
+    list-style: none;
+    /* margin-bottom: 30px */
+}
+
+.chat .chat-history ul li:last-child {
+    margin-bottom: 0px
+}
+
+.chat .chat-history .message-data {
+    margin-bottom: 0px
+}
+
+.chat .chat-history .message-data img {
+    border-radius: 40px;
+    width: 40px
+}
+
+.chat .chat-history .message-data-time {
+    color: #020202;
+    padding-left: 6px;
+}
+.chat .chat-history .message {
+    color: #444;
+    padding: 9px 27px;
+    line-height: 20px;
+    font-size: 11px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative;
+}
+
+.chat .chat-history .message:after {
+    bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px
+}
+.chat .chat-history .my-message {
+    background: #585858;
+    color: white !important;
+}
+
+/* .chat .chat-history .my-message:after {
+    bottom: 100%;
+    left: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #efefef;
+    border-width: 10px;
+    margin-left: -10px
+} */
+
+.chat .chat-history .other-message {
+    background: #e1e1e1;
+    text-align: right;
+}
+.chat .chat-history .other-message:after {
+    /* border-bottom-color: #e8f1f3;
+    left: 93% */
+}
+.message-data2{
+    font-size: 12px;    color: #020202;
+    padding-left: 6px;
+    /* font-weight: 600; */
+}
+.chat .chat-message {
+    padding: 20px
+}
+
+.online,
+.offline,
+.me {
+    margin-right: 2px;
+    font-size: 8px;
+    vertical-align: middle
+}
+
+.online {
+    color: #86c541
+}
+
+.offline {
+    color: #e47297
+}
+
+.me {
+    color: #1d8ecd
+}
+
+.float-right {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+@media only screen and (max-width: 767px) {
+    .chat-app .people-list {
+        height: 465px;
+        width: 100%;
+        overflow-x: auto;
+        background: #fff;
+        left: -400px;
+        display: none
+    }
+
+    .chat-app .people-list.open {
+        left: 0
+    }
+
+    .chat-app .chat {
+        margin: 0
+    }
+
+    .chat-app .chat .chat-header {
+        border-radius: 0.55rem 0.55rem 0 0
+    }
+
+    .chat-app .chat-history {
+        height: 300px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .chat-app .chat-list {
+        height: 650px;
+        overflow-x: auto
+    }
+
+    .chat-app .chat-history {
+        height: 600px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .chat-app .chat-list {
+        height: 480px;
+        overflow-x: auto
+    }
+
+    .chat-app .chat-history {
+        height: calc(100vh - 350px);
+        overflow-x: auto
+    }
+}
+.message-data {
+    font-size: 0.8em; /* Smaller font size for timestamps */
+    color: #999; /* Gray color for timestamps */
+    display: block; /* Make timestamps block elements */
+    margin-top: 5px; /* Margin above timestamps */
+    text-align: right; /* Align timestamp to the right */
+}
+
+.my-message {
+    background-color: #e0f7fa; /* Light blue for your messages */
+    float: left;
+    clear: both;
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.other-message {
+    background-color: #fff9c4; /* Light yellow for other messages */
+    float: right;
+    clear: both;
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message-data-time {
+    font-size: 0.8em;
+    color: #999;
+}
+.chat-history {
+    min-height: 20rem;
+    overflow-y: auto;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 15px;
+    
+}
+.chat-history ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.clearfix {
+    clear: both; /* Clear floats */
+}
+
+.message {
+    padding: 10px 15px; /* Padding inside each message */
+    border-radius: 10px; /* Rounded corners for messages */
+    margin: 5px 0; /* Margin between messages */
+}
+
+.my-message {
+    background-color: #e0f7fa; /* Light blue for your messages */
+    float: right; /* Align to left */
+}
+
+.other-message {
+    background-color: #fff9c4; /* Light yellow for other messages */
+    float: left; /* Align to right */
+}
+
+.message-data-time {
+    font-size: 0.8em; /* Smaller font size for timestamps */
+    color: #999; /* Gray color for timestamps */
+    display: block; /* Make timestamps block elements */
+    margin-top: 5px; /* Margin above timestamps */
+}
+.msg{
+    text-align: center;
+    margin: 20px;
+}
+/* viewkapaege */
+/* phli stye */
+.nn{
+    border:1px
+}
+.image-gallery {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+grid-template-rows: repeat(2);
+gap: 7px;
+height:100%;
+}
+
+.image-gallery .main-image {
+grid-row: span 2;
+}
+
+.image-gallery img {
+width: 100%;
+height: 100%;
+
+
+}
+
+
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+border: 0px !important;
+}
+
+.modal-content img {
+width: 100%;
+}
+
+.close {
+margin-top: 10px;
+margin-left: 30px;
+color: black;
+font-size: 40px;
+font-weight: bold;
+cursor: pointer;
+}
+/* end */
+/* 2secstye */
+.modal-content {
+    padding: 20px;
+    margin-top: 20px;
+}
+.top-image {
+    margin-bottom: 5px;
+}
+.top-image img {
+    width: 100%;
+    height: auto;
+}
+.bottom-images {
+    display: flex;
+    width: 50%;
+    gap: 7px;
+}
+
+
+/* endstyele */
+/* 3rdstyle */
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    /* margin: 20px; */
+    align-items: center;
+}
+.main{
+    height: 99% !important;
+}
+.main-image {
+    grid-column: 1 / span 1;
+    height: 100%;
+}
+
+.thumbnail-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+
+._mqdoygn {
+    overflow-y: hidden !important;
+    max-height: -webkit-calc(100vh - 144px) !important;
+    max-height: -moz-calc(100vh - 144px) !important;
+    max-height: calc(100vh - 44px) !important;
+    position: relative !important;
+    min-height: 300px !important;
+    height: 100% !important;
+}
+.image-item {
+    width: 100%;
+    object-fit: cover;
+    height: 100% !important;
+
+    /* border-radius: 8px; */
+    cursor: pointer;
+}
+
+.main {
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+
+    /* border-radius: 10px; */
+}
+
+.show-all-container {
+    position: relative;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: default !important;
+}
+.pso {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 14px;
+    width: 98%;
+    align-items: center;
+}
+.highlight {
+    border: 2px solid blue; /* Change this to any color you want for the highlight */
+    transition: border 0.3s; /* Smooth transition for the border */
+}
+.image-gallery img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+.image-gallery img:hover {
+    filter: brightness(70%); /* Darken the image */
+}
+.close {
+    display: inline-block; 
+    position: relative; 
+}
+
+.top-image img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+.top-image img:hover { 
+    filter: brightness(70%); /* Darken the image on hover */
+}
+
+.bottom-images img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+.bottom-images img:hover { 
+    filter: brightness(70%); /* Darken the image on hover */
+}
+
+.close1 {
+    cursor: pointer; 
+    transition: transform 0.2s;
+    position: relative; 
+    z-index: 1; 
+}
+.newclass22{
+    line-height: 1.25rem;     width: 100%;box-sizing: border-box;outline: none;    max-width: 100%;    display: block;    -webkit-appearance: none;    resize: none;min-height: clamp(44PX, 2.75rem, 57PX);min-width: auto; overflow:hidden;   background-color: transparent;   margin: 0 1px 0 0;padding: 12px 20px; height: 44px !important;border-radius: 29px !important;
+}
+.close1:hover {
+    transform: scale(1.1);
+}
+
+
+.atm_e2_u29brm {
+    height: 70px !important;
+    top: -7px !important;
+}
+.close:hover::before {
+    background-color: #DDDDDD;
+}@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1072px !important;
+    }
+  
+}
+.chat-history {
+    height: 60vh; /* Full viewport height */
+    overflow-y: auto;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 15px;
+    flex-direction: column;
+}
+/* For screens wider than 1200px */
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 100%!important;
+    }}
+/* For the chat history section */
+.chat-history {
+    flex-grow: 1; /* Ensures that it takes available space */
+    max-height: 90vh; /* Adjusts the max height to 70% of the viewport */
+    min-height: 30vh; /* Sets a minimum height to prevent it from being too small */
+    overflow-y: auto; /* Enables scrolling if content exceeds the available height */
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box; /* Ensures padding is included in the element's width/height */
+}
+
+/* For the overall chat area */
+.chat-app .chat {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    height: 93vh; /* Full viewport height */
+    min-height: 93vh; /* Ensures it always takes at least the full height */
+}
+
+/* Ensuring responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .chat-history {
+        max-height: 60vh; /* Reduce max-height for smaller screens */
+        min-height: 40vh; /* Increase minimum height slightly for better readability */
+    }
+    
+    .chat-app .chat {
+        height: 100vh; /* Maintain full viewport height on small devices */
+    }
+}
+
+
+#sendMessage{
+    height: 100%;
+}
+
+/* For all screen sizes (default) */
+
+
+/* @media (min-width: 1300px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1359px !important;
+    }  .chat-history {
+        height: 100px;
+        overflow-y: auto;
+        border-radius: 2px;
+        background-color: #ffffff;
+        padding: 15px;    min-height: 21rem;
+    }
+    } */
+
+
+/* endstyeke */
+
+
+.show-all-button{
+    margin-bottom:25px !important;
+}
+
+
+.carousel-div {
+    display: flex;
+    max-height: 500px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.child-whole {
+    width: 50%;
+}
+
+.sub-child {
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+img {
+    height: auto;
+}
+
+.sub-sub-child {
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .child-whole {
+        width: 100%;
+    }
+
+    .sub-child {
+        display: none;
+    }
+}
